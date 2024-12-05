@@ -1,5 +1,5 @@
 ## Introduction
-This project implements an automated content moderation system that classifies textual content as appropriate or inappropriate for public display. Leveraging machine learning models (LSTM and BERT) and natural language processing techniques, the system analyzes textual data in real-time to provide classification results. Additionally, the project extends its functionality to extract text from images and memes (using Google Cloud Vision API ), enabling classification based on the extracted textual content.
+This project implements an automated content moderation system that classifies textual content as appropriate or inappropriate for public display. Leveraging machine learning models (LSTM and BERT) and natural language processing techniques, the system analyzes textual data in real-time to provide classification results.
 
 ## Files Included
 1. `Data_Preprocessing.ipynb`: Jupyter notebook for loading and preprocessing the dataset (`hate_offensive_data.csv`) to create a new CSV file (`preprocessed_data.csv`).
@@ -17,7 +17,7 @@ This project implements an automated content moderation system that classifies t
 4. Open and run `LSTM.ipynb` to train and evaluate the LSTM model for text classification using the preprocessed data.
 5. Open and run `BERT.ipynb` to train and evaluate the BERT model for text classification using the preprocessed data.
 6. Navigate to the `Flask_app` directory and run the Flask application by executing the following command: `python main.py`
-7. Access the Flask application through a web browser by visiting `http://localhost:5000/`. You can input text or upload images to receive classification results based on the content provided.
+7. Access the Flask application through a web browser by visiting `http://localhost:5000/`. You can input text to receive classification results based on the content provided.
 
 Note: 
 - Trained model (BERT) files are not included in the repository and need to be trained separately using the provided notebooks. 
